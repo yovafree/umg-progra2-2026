@@ -10,6 +10,7 @@ Este repositorio reúne ejercicios y prácticas del curso de Programación II (U
 | Clase 4-1 | Ejemplos | Listas con ArrayList, manejo de objetos Persona, lectura/escritura de archivos de texto y formulario Swing con JTable para visualizar personas. | [Clase4-1/Ejemplos](Clase4-1/Ejemplos/) |
 | Clase 7 | EjemploAccesosListas | Modificadores de acceso, herencia básica y operaciones CRUD en memoria sobre una lista de personas. | [Clase7/EjemploAccesosListas](Clase7/EjemploAccesosListas/) |
 | Clase 9 | EjemploPOO | Modelado de clientes, productos y facturas, composición de detalles, herencia de frutas y formulario Swing. | [Clase9/EjemploPOO](Clase9/EjemploPOO/) |
+| Clase 14 | demo-01 … demo-05 | Conexión a PostgreSQL con JDBC, patrón MVC, CRUD desde Swing con DAO y manejo de excepciones SQL (Docker Compose + Java 21). | [Clase14](Clase14/) |
 
 ## Ejemplos por clase
 

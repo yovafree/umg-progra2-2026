@@ -1,0 +1,28 @@
+# Base de datos para los demos de la Clase 14 (JDBC + MVC).
+#
+#   Levantar:   docker compose up -d
+#   Apagar:     docker compose stop        (los datos se conservan)
+#   Reiniciar:  docker compose down -v     (borra los datos; init.sql se vuelve a ejecutar)
+#               docker compose up -d
+#
+# El puerto del equipo es 5432. Si ya tiene otro PostgreSQL usando ese puerto,
+# puede cambiarlo sin editar este archivo:  DB_PORT=5433 docker compose up -d
+# (y en Java: DB_URL=jdbc:postgresql://localhost:5433/universidad)
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: umg-postgres-universidad
+    environment:
+      POSTGRES_DB: universidad
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      # Los scripts de esta carpeta se ejecutan solo la primera vez (volumen vacío).
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - datos_universidad:/var/lib/postgresql/data
+
+volumes:
+  datos_universidad:

@@ -1,0 +1,28 @@
+# Maven
+target/
+dependency-reduced-pom.xml
+
+# Java
+*.class
+*.log
+hs_err_pid*
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# NetBeans
+nbproject/private/
+nbactions.xml
+nb-configuration.xml
+
+# Eclipse / VS Code
+.classpath
+.project
+.settings/
+.vscode/
+.factorypath
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
