@@ -23,6 +23,16 @@ services:
       # Los scripts de esta carpeta se ejecutan solo la primera vez (volumen vacío).
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
       - datos_universidad:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: umg-pgadmin-universidad
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8090:80"
+    depends_on:
+      - postgres
 
 volumes:
   datos_universidad:

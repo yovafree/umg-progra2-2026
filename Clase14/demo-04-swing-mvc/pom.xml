@@ -11,7 +11,7 @@
     <name>Demo 04 - Formulario Swing con MVC</name>
 
     <properties>
-        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Clase que ejecuta "mvn compile exec:java". Se puede cambiar con -Dexec.mainClass=... -->
         <exec.mainClass>com.umg.registro.App</exec.mainClass>
